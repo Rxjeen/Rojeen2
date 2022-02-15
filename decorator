@@ -1,0 +1,35 @@
+'''
+
+isbn 10
+
+0847863174
+
+'''
+
+# total = 0+1+8*2+4*3.....+7*9
+isbn='0847863174'
+total=0
+for x in range(0,9):
+    total += int(isbn[x])*(x+1)
+    print(x+1, isbn[x], total)
+print(total)
+cd= total % 11
+print(cd)
+
+'''
+length check - len()
+- tell the user if its too short or too long
+type check- isdigit()
+tell the user its numeric field and not numeric
+format check- find()
+does the email contain @
+range check- low < high <high
+check digit - isbn 10
+calculate check digit isbn 10
+'''
+user_in=input("please input something:")
+if user_in==None:
+    print("you have not entered anything")
+if len(user_in)<5:
+    print("you must input something longer than 5 digits")
+if not user_in
